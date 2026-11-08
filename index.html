@@ -224,7 +224,9 @@ button,select{border-radius:10px}
 .vbars .b.e i{background:var(--env)}.vbars .b.i i{background:var(--econ)}.vbars .b.p i{background:var(--pol)}
 .vbars .n{text-align:right;font-weight:600;color:var(--fg)}
 .bars .sub3{display:none}
-@media (max-width:1180px){.kpis{grid-template-columns:repeat(2,1fr)}}
+.panel.controls{overflow-y:auto;overscroll-behavior:contain}
+.panel.answer{overflow-y:auto;overscroll-behavior:contain}
+@media (max-width:1180px){.kpis{grid-template-columns:repeat(2,1fr)}.panel.controls,.panel.answer{overflow:visible;height:auto;min-height:0}}
 @media (max-width:560px){.kpis{grid-template-columns:1fr}}
 </style>
 
