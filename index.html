@@ -755,7 +755,7 @@ function render() {
   const top = rows[0]; const litRows = on.length ? rows.filter(r => r.s >= state.thr) : [];
   const kaf = litRows.reduce((a, r) => a + r.d.kaf, 0);
   const modes = { b: litRows.filter(r => r.d.trend === 'structural').length, r: litRows.filter(r => r.d.trend !== 'structural').length };
-  $('#k1').textContent = rows.length; $('#k1d').textContent = `${regionName} · 38 scored worldwide`;
+  $('#k1').textContent = rows.length; $('#k1d').textContent = `${regionName} · 39 scored worldwide`;
   $('#k2').textContent = lit; $('#k2d').textContent = `threshold ${state.thr} on ${on.length === 3 ? 'all three lenses' : on.length + ' lens' + (on.length === 1 ? '' : 'es')}`;
   $('#k3').textContent = top ? top.d.name : '—'; $('#k3').classList.toggle('long', !!top && top.d.name.length > 14); $('#k3d').textContent = top ? `combined score ${top.s.toFixed(0)} · ${top.d.trend === 'structural' ? 'baseload' : 'readiness'} market` : '';
   $('#k4').textContent = kaf >= 1000 ? (kaf / 1000).toFixed(1) + ' MAF/yr' : kaf + ' kAF/yr'; $('#k4d').textContent = litRows.length ? `${modes.b} baseload · ${modes.r} readiness markets · indicative` : 'nothing clears the bar';
