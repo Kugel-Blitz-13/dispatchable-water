@@ -1,4 +1,4 @@
-# Dispatchable Water · Market Finder
+# Aquaspot · market finder for desalination
 
 Team Sea Major · MIT Energy & Climate Hack 2026 · Harmony Desalting challenge.
 
