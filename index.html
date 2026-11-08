@@ -318,8 +318,10 @@ select{border-color:#D8D1C6;color:#292A25;background:#FBF8F1}
 .three{background:var(--hair)}
 .three div{padding:14px 16px}
 .three .k{font-family:var(--sans)}
-.three .v{font-size:21px;color:var(--forest);white-space:normal;line-height:1.15}
-.three div{grid-template-columns:92px 1fr}
+.three .v{font-size:21px;color:var(--forest);white-space:normal;line-height:1.15;text-align:left}
+.three>div{grid-template-columns:1fr;row-gap:2px}
+.three .k,.three .v,.three .w{display:block;padding:0;grid-column:1;background:transparent}
+.three .k{grid-row:1}.three .v{grid-row:2}.three .w{grid-row:3;margin-top:6px}
 .map{overflow:hidden}
 .answer .panel h2,.answer h2{font-size:19px}
 .answer .dh h3{font-size:24px}
